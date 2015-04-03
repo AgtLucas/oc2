@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TemperatureConverter.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    float degreesFarenheit = 80.0;
+
+    TemperatureConverter *converter = [[TemperatureConverter alloc] init];
+    float degreesCelsius = [converter degreesFarenheitToCelsius:degreesFarenheit];
+
+    NSLog(@"%0.2f degrees farenheit = %0.2f degrees celsius", degreesFarenheit, degreesCelsius);
+
     return YES;
 }
 
