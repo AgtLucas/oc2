@@ -14,6 +14,7 @@
 		DCC743401ACEBC8E0056CDF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC7433F1ACEBC8E0056CDF0 /* Images.xcassets */; };
 		DCC743431ACEBC8E0056CDF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC743411ACEBC8E0056CDF0 /* LaunchScreen.xib */; };
 		DCC7434F1ACEBC8E0056CDF0 /* OC1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC7434E1ACEBC8E0056CDF0 /* OC1Tests.m */; };
+		DCC7435A1ACEBE870056CDF0 /* TemperatureConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC743591ACEBE870056CDF0 /* TemperatureConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DCC743481ACEBC8E0056CDF0 /* OC1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OC1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC7434D1ACEBC8E0056CDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC7434E1ACEBC8E0056CDF0 /* OC1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OC1Tests.m; sourceTree = "<group>"; };
+		DCC743581ACEBE870056CDF0 /* TemperatureConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureConverter.h; sourceTree = "<group>"; };
+		DCC743591ACEBE870056CDF0 /* TemperatureConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				DCC7433F1ACEBC8E0056CDF0 /* Images.xcassets */,
 				DCC743411ACEBC8E0056CDF0 /* LaunchScreen.xib */,
 				DCC743321ACEBC8E0056CDF0 /* Supporting Files */,
+				DCC743581ACEBE870056CDF0 /* TemperatureConverter.h */,
+				DCC743591ACEBE870056CDF0 /* TemperatureConverter.m */,
 			);
 			path = OC1;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				DCC7433B1ACEBC8E0056CDF0 /* ViewController.m in Sources */,
 				DCC743381ACEBC8E0056CDF0 /* AppDelegate.m in Sources */,
 				DCC743351ACEBC8E0056CDF0 /* main.m in Sources */,
+				DCC7435A1ACEBE870056CDF0 /* TemperatureConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
