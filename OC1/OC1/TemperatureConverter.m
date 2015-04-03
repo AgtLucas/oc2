@@ -10,4 +10,6 @@
 
 @implementation TemperatureConverter
 
+// Implement methods
+
 @end

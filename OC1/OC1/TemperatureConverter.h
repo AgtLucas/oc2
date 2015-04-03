@@ -10,4 +10,7 @@
 
 @interface TemperatureConverter : NSObject
 
+// Public methods goes here
+- (float)degreesFarenheitToCelsius:(float)degreesFarenheit;
+
 @end
