@@ -11,5 +11,8 @@
 @implementation TemperatureConverter
 
 // Implement methods
+- (float)degreesFarenheitToCelsius:(float)degreesFarenheit {
+    return 5.0/9.0 * (degreesFarenheit - 32.0);
+}
 
 @end
