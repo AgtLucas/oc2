@@ -22,7 +22,6 @@
     return self;
 }
 
-// Implement methods
 - (float)degreesFarenheitToCelsius:(float)degreesFarenheit {
 
     _totalDegreesFarenheit += degreesFarenheit;
