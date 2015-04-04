@@ -19,12 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    float degreesFarenheit = 80.0;
+    TemperatureConverter *converter = [[TemperatureConverter alloc] initWithLocation:@"London"];
 
-    TemperatureConverter *converter = [[TemperatureConverter alloc] init];
-    float degreesCelsius = [converter degreesFarenheitToCelsius:degreesFarenheit];
+    for (int i = 60; i <= 80; i += 10) {
+        float degreesCelsius = [converter degreesFarenheitToCelsius:i];
+        NSLog(@"%0.2f degrees farenheit = %0.2f degrees celsius", (float)i, degreesCelsius);
+    }
 
-    NSLog(@"%0.2f degrees farenheit = %0.2f degrees celsius", degreesFarenheit, degreesCelsius);
+    NSLog(@"Average degrees farenheit in %@: %0.2f", converter.location, converter.averageDegreesFarenheit);
 
     return YES;
 }
