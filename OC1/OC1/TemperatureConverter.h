@@ -10,7 +10,11 @@
 
 @interface TemperatureConverter : NSObject
 
-// Public methods goes here
+
+@property (strong, nonatomic) NSString *location;
+@property (assign) float averageDegreesFarenheit;
+
+- (instancetype) initWithLocation:(NSString *)location;
 - (float)degreesFarenheitToCelsius:(float)degreesFarenheit;
 
 @end
